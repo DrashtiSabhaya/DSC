@@ -1,0 +1,18 @@
+/*Write a C Program To check whether the string entered by user
+is a palindrome string or not.*/
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+	char str[10],rev[10];
+	int i,j=0;
+	printf("Enter string = ");
+	scanf("%s",str);
+	i=strlen(str)-1,j=0;
+	while(i>=0)
+		rev[j++]=str[i--];
+	if(strcmp(rev,str)==0)
+		printf("String is Palindrom\n");
+	else
+		printf("String is not Palindrom\n");
+}
